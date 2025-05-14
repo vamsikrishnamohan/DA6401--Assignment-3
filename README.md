@@ -1,5 +1,5 @@
-# CS6910-Assignment3
-Assignment  3 of the course CS6910: Fundamentals of Deep Learning offered at IIT Madras by Sujay Bokil (ME17B120) and Avyay Rao (ME17B130).
+# Assignment3
+##  DA24M026
 
 1. This notebook is structured in such a way that all the cells can be run one after another. Run All Cells command can also be used, but be wary of WandB sweeps at the end.
 2. To run the model without WandB, use the following code:
