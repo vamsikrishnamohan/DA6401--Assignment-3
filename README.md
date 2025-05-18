@@ -100,5 +100,5 @@ plot_attention_heatmap(
 ```
 ## Results 
 Predictions with and without attention layer are downloaded and saved in csv format available in this repo.
-And all the visualization results are also in repo in - [HERE](#visualization_results) folder
+And all the visualization results are also in repo in - [visualization_results]folder
 
