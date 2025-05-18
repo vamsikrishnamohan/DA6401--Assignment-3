@@ -100,3 +100,14 @@ plot_attention_heatmap(
 ```
 ## Results 
 Predictions with and without attention layer are downloaded and saved in csv format available in this repo.
+
+### Here are the visualization results :
+![Word Cloud](.visualization_results\word_cloud.png)
+
+![Transliteration of 5 random words](.visualization_results\transliteration.png)
+
+![Attention HeatMaps](.visualization_results\Attention_heatmaps.png)
+
+![Connectivity Map](.visualization_results\connectivity.png)
+
+
