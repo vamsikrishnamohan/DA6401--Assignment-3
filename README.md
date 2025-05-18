@@ -1,52 +1,102 @@
-# CS6910-Assignment3
-Assignment  3 of the course CS6910: Fundamentals of Deep Learning offered at IIT Madras by Sujay Bokil (ME17B120) and Avyay Rao (ME17B130).
+# DA6401 Assignment-3:
 
-1. This notebook is structured in such a way that all the cells can be run one after another. Run All Cells command can also be used, but be wary of WandB sweeps at the end.
-2. To run the model without WandB, use the following code:
-```python
-model = test_on_dataset(language="hi",
-                        embedding_dim=256,
-                        encoder_layers=3,
-                        decoder_layers=3,
-                        layer_type="lstm",
-                        units=256,
-                        dropout=0.2,
-                        attention=False)
+## Transliteration using RNN's
+### DA24M026
+### Vamsi krishna Mohan
+A sequence-to-sequence model implementation for transliteration between English and Indian languages (Hindi, Tamil, Telugu) with and without attention mechanisms.
+
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Dataset Setup](#dataset-setup)
+- [Training](#training)
+- [Evaluation](#evaluation)
+- [Visualization](#visualization)
+- [Project Structure](#project-structure)
+- [Results](#results)
+
+## Features
+
+- **Two Model Variants**
+  - With Bahdanau Attention
+  - Without Attention
+- **Supports Multiple Languages**
+- **Beam Search Decoding**
+- **Visualization Tools**
+  - Attention Heatmaps
+  - Word Clouds
+  - Character Connectivity
+- **Evaluation Metrics**
+  - BLEU Score
+  - Word Accuracy
+  - Character Error Rate
+
+## Installation
+
+### Prerequisites
+
+- Python 3.7+
+- pip package manager
+
+### Setup
+
+```bash
+# Clone repository
+git clone https://github.com/vamsikrishnamohan/DA6401--Assignment-3.git
+
+
+# Install dependencies
+pip install -r requirements.txt
 ```
-3. To run the model with WandB sweep, use the following code:
-```python
-# Creating the WandB config
-sweep_config = {
-  "name": "Sweep 1- Assignment3",
-  "method": "grid",
-  "parameters": {
-        "enc_dec_layers": {
-           "values": [1, 2, 3]
-        },
-        "units": {
-            "values": [64, 128, 256]
-        },
-        "layer_type": {
-            "values": ["rnn", "gru", "lstm"]
-        }
-    }
-}
-# Creating a sweep
-sweep_id = wandb.sweep(sweep_config, project="cs6910-assignment3")
-# Running the sweep
-wandb.agent(sweep_id, function=lambda: train_with_wandb("hi"))
+## Training 
+
+### With attention
+```bash
+python with_attention/main.py \
+  --data_dir ./data/ \
+  --embedding_dim 256 \
+  --units 512 \
+  --batch_size 64 \
+  --epochs 20 \
+  --learning_rate 0.001 \
+  --beam_width 3 \
+  --use_wandb
+  ```
+ ### without attention
+ ``` bash
+ python without_attention/main.py \  #replace with main path 
+  --data_dir ./data/ \   
+  --embedding_dim 128 \
+  --units 256 \
+  --batch_size 128 \
+  --epochs 15 \
+  --learning_rate 0.001
+  ```
+  ## Evaluation
+  ``` bash
+  python evaluate.py \  #(ensure you are in either with attention or without attention code folder)
+  --checkpoint path/to/model \
+  --test_data ./data/hi/test.tsv \
+  --output_file results.json \
+  [--beam_width 5] \
+  [--visualize_attention]
+ ```
+## Visualization
+### word clouds
+```bash
+python -m utils.visualization --model path/to/model --num_words 50
 ```
-4. To visualize the model outputs in the form of a wordcloud, use the following code:
-```python
-# "model" here is the output of the function in step 2
-visualize_model_outputs(model, n=20)
+### Attention Heatmaps
+``` bash
+from utils.visualization import plot_attention_heatmap
+
+plot_attention_heatmap(
+    attention_weights=attention_matrix,
+    input_words=list("example"),
+    output_words=list("उदाहरण")
+)
 ```
-5. To visualise the model connectivity, use the following code:
-```python
-# Sample some words from the test data
-test_words = get_test_words(5)
-# Visualise connectivity for "test_words"
-for word in test_words:
-    visualise_connectivity(model, word, activation="scaler")
-```
-6. WandB report can be found at: https://wandb.ai/avyay-sujay/cs6910-assignment3/reports/Assignment-3-RNNs-for-Transliteration---Vmlldzo2NzA0NDc
+## Results 
+Predictions with and without attention layer are downloaded and saved in csv format available in this repo.
