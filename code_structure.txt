@@ -1,0 +1,21 @@
+project_root/
+├── data/
+│   ├── __init__.py
+│   ├── data_loading.py
+│   └── preprocessing.py
+├── with_attention/
+│   ├── __init__.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate.py
+│   └── main.py
+├── without_attention/
+│   ├── __init__.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate.py
+│   └── main.py
+└── utils/
+    ├── __init__.py
+    ├── visualization.py
+    └── beam_search.py
