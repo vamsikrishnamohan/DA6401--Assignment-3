@@ -48,4 +48,4 @@ test_words = get_test_words(5)
 for word in test_words:
     visualise_connectivity(model, word, activation="scaler")
 ```
-6. WandB report can be found at: https://wandb.ai/avyay-sujay/cs6910-assignment3/reports/Assignment-3-RNNs-for-Transliteration---Vmlldzo2NzA0NDc
+6. WandB report can be found at: https://wandb.ai/da24m026-indian-institute-of-technology-madras/Assignment3/reports/DA24M026-Assignment-3---VmlldzoxMjc5OTg2Ng
