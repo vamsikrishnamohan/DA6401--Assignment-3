@@ -3,6 +3,8 @@
 ## Transliteration using RNN's
 ### DA24M026
 ### Vamsi krishna Mohan
+### WandB link : https://wandb.ai/avyay-sujay/cs6910-assignment3/reports/Assignment-3-RNNs-for-Transliteration---Vmlldzo2NzA0NDc
+
 A sequence-to-sequence model implementation for transliteration between English and Indian languages (Hindi, Tamil, Telugu) with and without attention mechanisms.
 
 
