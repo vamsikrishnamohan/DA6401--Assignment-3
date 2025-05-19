@@ -4,7 +4,7 @@
 ### DA24M026
 ### Vamsi krishna Mohan
 
-## Hello TA's Sorry for the inconvenience but this is to pledge you that i please go through my wandb downloaded pdf and the plots are also downloaded and stored in wandb file. This is because i have tried multiple times and also mailed you guys but i am not able to share the link with an "Anyone can view" option. I have tried multiple times but i its not working so i came up with this. Please dont deduct points, its really not my fault. Hope you understand
+## Hello TA's Sorry for the inconvenience but this is to pledge you that  please go through my wandb downloaded pdf and the plots are also downloaded and stored in wandb folder too This is because i have tried multiple times and also mailed you guys but i am not able to share the link with an "Anyone can view" option. I have tried multiple times but i its not working so i came up with this. Please dont deduct points, its really not my fault. Hope you understand
 
 ###### WandB link (This might not work as i am unable to share the link with view access): https://wandb.ai/da24m026-indian-institute-of-technology-madras/Assignment3/reports/DA24M026-Assignment-3---VmlldzoxMjc5OTg2Ng
 
