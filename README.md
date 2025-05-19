@@ -4,7 +4,7 @@
 ### DA24M026
 ### Vamsi krishna Mohan
 
-#### Hello TA's Sorry for the inconvenience but this is to pledge you that  please go through my wandb downloaded pdf link given to my gdrive file .This is because i have tried multiple times  but i am not able to share the link with an "Anyone can view" option so i shared downloaded wandb report . I hopw this works fine . Please dont deduct points, its really not my fault. Hope you understand
+#### Hello TA's Sorry for the inconvenience but this is to pledge you that  please go through my wandb downloaded pdf link given to my gdrive file .This is because i have tried multiple times  but i am not able to share the link with an "Anyone can view" option so i shared downloaded wandb report . I hope this works fine as report is what we need . Please dont deduct points, its really not my fault. Hope you understand
 
 ## WandB report (gdrive link): [Report](https://drive.google.com/file/d/14CX4K9plDv-BaydXa2qIR8gSO-4gWJEI/view?usp=sharing)
 
