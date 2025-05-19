@@ -6,7 +6,7 @@
 
 #### Hello TA's Sorry for the inconvenience but this is to pledge you that  please go through my wandb downloaded pdf link given to my gdrive file .This is because i have tried multiple times  but i am not able to share the link with an "Anyone can view" option so i shared downloaded wandb report . I hopw this works fine . Please dont deduct points, its really not my fault. Hope you understand
 
-## WandB report (This is gdrive link to my wandb report): [Report](https://drive.google.com/file/d/14CX4K9plDv-BaydXa2qIR8gSO-4gWJEI/view?usp=sharing)
+## WandB report (gdrive link): [Report](https://drive.google.com/file/d/14CX4K9plDv-BaydXa2qIR8gSO-4gWJEI/view?usp=sharing)
 
 A sequence-to-sequence model implementation for transliteration between English and Indian languages (Hindi, Tamil, Telugu) with and without attention mechanisms.
 
