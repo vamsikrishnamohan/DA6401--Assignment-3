@@ -51,9 +51,6 @@ A sequence-to-sequence model implementation for transliteration between English 
 # Clone repository
 git clone https://github.com/vamsikrishnamohan/DA6401--Assignment-3.git
 
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 ## Training 
 
